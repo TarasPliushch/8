@@ -1,67 +1,44 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+/* Додайте ці стилі до існуючого CSS */
+
+.task-text {
+    flex: 1;
+    cursor: pointer;
 }
 
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.completed {
+    text-decoration: line-through;
+    color: #888;
 }
 
-h1 {
-    text-align: center;
+.task-time {
+    font-size: 0.8em;
+    color: #666;
+    margin-right: 10px;
+}
+
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filters button {
+    padding: 5px 10px;
+    background: #e0e0e0;
     color: #333;
 }
 
-#task-form {
-    display: flex;
-    margin-bottom: 20px;
+.filters button:hover {
+    background: #d0d0d0;
 }
 
-#task-input {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
+.edit-btn {
+    background: #ffc107;
+    color: #000;
+    margin-right: 5px;
 }
 
-button {
-    padding: 10px 20px;
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background: #0056b3;
-}
-
-#task-list {
-    list-style: none;
-    padding: 0;
-}
-
-#task-list li {
-    background: #f4f4f4;
-    margin-bottom: 5px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.delete-btn {
-    background: #ff4444;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
+.edit-btn:hover {
+    background: #e0a800;
 }
